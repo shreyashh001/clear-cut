@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section with Company Logo and Navigation Links -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="your-company-logo.png" alt="Company Logo" class="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#">No Sign In Required, Made With Love💓</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <!-- Left Section with Title and Description -->
+        <div class="left-section">
+            <h1>Remove Image Background</h1>
+            <p>100% Automatic and <span class="highlight">Free</span></p>
+        </div>
+
+        <!-- Right Section with Upload Area -->
+        <div class="right-section">
+            <div class="upload-box">
+                <input type="file" id="imageUpload" accept="image/jpeg, image/png" hidden>
+                <button id="uploadButton">Upload Image</button>
+                <p>We are ready to help all the Pookies🎀😉</p>
+            </div>
+
+            <!-- Loading Animation -->
+            <div id="loading" class="loading-animation" style="display: none;">
+                Removing background, please wait...
+            </div>
+
+            <!-- Result Section -->
+            <div id="result" class="result" style="display: none;">
+                <img id="outputImage" src="" alt="Processed Image">
+                <div class="result-actions">
+                    <a id="downloadLink" href="#" download="removed-background.png">Download Image</a>
+                    <button id="removeMoreButton">Remove More</button> <!-- New button for removing more images -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

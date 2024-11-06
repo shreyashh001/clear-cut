@@ -1,0 +1,155 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed; /* Make header fixed to top */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px; /* Adjust this size based on your logo */
+    height: auto;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+/* Main Container Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f9f9f9;
+    padding-top: 100px; /* Add space for fixed header */
+}
+
+.main-container {
+    display: flex;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Left Section Styling */
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.left-section h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.left-section p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #777;
+}
+
+.highlight {
+    color: #ff9900;
+    font-weight: 700;
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-box {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#uploadButton {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upload-box p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Loading and Result Styling */
+.loading-animation, .result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+#result img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Download and Remove More Button Styling */
+.result-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#downloadLink,
+#removeMoreButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#removeMoreButton {
+    border: none;
+}
