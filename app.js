@@ -11,7 +11,7 @@ document.getElementById("imageUpload").addEventListener("change", async function
     document.getElementById("loading").style.display = "block";
     document.getElementById("result").style.display = "none";
 
-    const apiKey = "VS65xgZdXSvu74JUPMTT8xYp"; // Your API key for Remove.bg
+    const apiKey = "gB611zxcv6DQ79MuBB13qE5C"; // Your API key for Remove.bg
     const formData = new FormData();
     formData.append("image_file", file);
     formData.append("size", "auto");
